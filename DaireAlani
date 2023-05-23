@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class DaireAlanHesaplama {
+    public static void main(String[] args) {
+
+        int r,a;
+        float pi = 3.14f;
+
+        Scanner girdi = new Scanner(System.in);
+
+        System.out.print("Dairenin Yarıçapı Giriniz :");
+        r = girdi.nextInt();
+        System.out.printf("Daire Kesit Açısını Giriniz :");
+        a = girdi.nextInt();
+
+        float sonuc;
+        sonuc = (pi*r*r)*a/360;
+
+        System.out.printf("Hesaplamak İstediğiniz Alan :" + sonuc);
+
+
+
+        
+    }
+}
